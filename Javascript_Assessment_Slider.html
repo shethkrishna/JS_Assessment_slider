@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Javascript Assessment Slider</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        .main{
+            width: 60%;
+            height: 40%;
+            margin: 10% auto;
+            border: 1px solid black;
+            position: relative;
+            padding: 10px;
+        }
+        .main .im{
+            width: 100%;
+            /* height: 35%; */
+            margin: 0 auto;
+        }
+        .main .im img{
+            width: 100%;
+            height: inherit;
+        }
+        .one,.two,.three,.four{
+            position: absolute;
+            width: 10px;
+            height: 10px;
+            border-radius: 100%;
+            background-color: blueviolet;
+            bottom: 2px;
+        }
+        .main .one{
+            left: 46%;
+        }
+        .main .two{
+            left: 48%;
+        }
+        .main .three{
+            right: 48%;
+        }
+        .main .four{
+            right: 46%;
+        }
+    </style>
+</head>
+<body>
+    
+    <div class="main">
+        <div class="im">
+            <img src="https://img.freepik.com/free-photo/old-rusty-fishing-boat-slope-along-shore-lake_181624-44902.jpg?w=1060&t=st=1708329366~exp=1708329966~hmac=65b80fbb8678f5af3007daed226719ba2f2ec7fd2e6649ef90d4128d40d3bd6a" alt="" id="image1">
+        </div>
+        <div class="one" onclick="one()"></div>
+        <div class="two" onclick="two()"></div>
+        <div class="three" onclick="three()"></div>
+        <div class="four" onclick="four()"></div>
+    </div>
+
+    <script>
+        function one(){
+            document.getElementById("image1").src = "https://img.freepik.com/free-photo/old-rusty-fishing-boat-slope-along-shore-lake_181624-44902.jpg?w=1060&t=st=1708329366~exp=1708329966~hmac=65b80fbb8678f5af3007daed226719ba2f2ec7fd2e6649ef90d4128d40d3bd6a"
+        }
+        function two(){
+            document.getElementById("image1").src = "https://img.freepik.com/free-photo/beautiful-landscape-with-tree_1048-1822.jpg?w=1380&t=st=1708330424~exp=1708331024~hmac=81ef243a774fdf025b932e1e72500e48d0a75936edfc32c406fc84d17699d32d"
+        }
+        function three(){
+            document.getElementById("image1").src = "https://img.freepik.com/free-photo/painting-mountain-lake-with-mountain-background_188544-9126.jpg?w=1380&t=st=1708330443~exp=1708331043~hmac=fd95ffe8e165071aa76361996788ccf675967cd1db079d4d6bc85db84f08d8da"
+        }
+        function four(){
+            document.getElementById("image1").src = "https://img.freepik.com/premium-photo/landscape-waterfall_1417-2019.jpg?w=996"
+        }
+    </script>
+</body>
+</html>
